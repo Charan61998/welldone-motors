@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flashing & Typing Text</title>
+    <style>
+        /* Flashing Text */
+        .flashing {
+            font-size: 2rem;
+            font-weight: bold;
+            color: red;
+            animation: flash 1s infinite alternate;
+        }
+
+        @keyframes flash {
+            0% { opacity: 1; }
+            100% { opacity: 0; }
+        }
+
+        /* Typing Effect */
+        .typing-container {
+            white-space: nowrap;
+            overflow: hidden;
+            animation: typing 4s  infinite;
+        }
+
+        @keyframes typing {
+            0% { width: 0; }
+            50% { width: 22%; }
+            100% { width: 0; }
+        }
+
+
+    </style>
+</head>
+<body>
+    <h1 class="flashing">Flashing Text</h1>
+    <h1 class="typing-container">Typing Effect Text</h1>
+</body>
+</html>
